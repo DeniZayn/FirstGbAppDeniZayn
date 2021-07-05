@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#43A047"
+    android:backgroundTint="#BBC7D1"
+    android:foregroundTint="#5E1D1D"
+    android:foregroundTintMode="add"
+    android:textAlignment="center"
+    android:textDirection="anyRtl"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#AFC5D6"
+
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3949AB"
+            android:text="Contact" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:text="!! SASQUATCH!!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:backgroundTint="#713333"
+            android:backgroundTintMode="add"
+            android:breakStrategy="high_quality"
+            android:drawableTint="#5E35B1"
+            android:drawableTintMode="add"
+            android:ems="10"
+            android:inputType="phone"
+            android:password="kgkgk"
+            android:text="56548655" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:text="Santus" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4F773E"
+            android:backgroundTintMode="src_over"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="524568@lfl.com" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#451C50"
+            android:backgroundTintMode="add"
+            android:drawableTint="#E4C0C0"
+            android:ems="10"
+            android:inputType="date"
+            android:text="22.05.2100" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="243dp"
+            app:srcCompat="@drawable/bigfoot_face" />
+
+        <EditText
+            android:id="@+id/editTextTextPostalAddress2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="11"
+            android:inputType="textPostalAddress"
+            android:scrollbarSize="5"
+            android:text="Great Smoky Mountains"
+            android:textColor="#FB8C00" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextTextPostalAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+
+</android.support.constraint.ConstraintLayout>

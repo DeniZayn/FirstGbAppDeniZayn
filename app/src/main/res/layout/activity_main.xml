@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello User!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="117dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="76dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#AFC5D6"
+
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CDDC39"
+            android:buttonTint="#FFC107"
+            android:drawableTint="#CDDC39"
+            android:foregroundTint="@color/purple_700"
+            android:shadowColor="#2196F3"
+            android:showText="true"
+            android:text="Switch"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#03A9F4"
+            android:textColorHint="#8BC34A"
+            android:textOn="ON"
+            android:thumbTint="#CDDC39"
+            android:trackTint="#9C27B0" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0BF1DB"
+            android:button="@android:drawable/checkbox_on_background"
+            android:buttonTint="#FF9800"
+            android:foregroundTint="#CDDC39"
+            android:foregroundTintMode="add"
+            android:shadowColor="#9A6E6E"
+            android:text="Apply"
+            android:textColor="#03A9F4" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="#B52B21"
+            android:text="ToggleButton"
+            android:textColorLink="#56335C"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
