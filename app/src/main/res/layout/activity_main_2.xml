@@ -19,8 +19,8 @@
         android:backgroundTint="#AFC5D6"
 
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="16dp">
+        tools:layout_editor_absoluteX="-28dp"
+        tools:layout_editor_absoluteY="-16dp">
 
         <Button
             android:id="@+id/button2"

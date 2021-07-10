@@ -34,7 +34,9 @@
         android:layout_height="match_parent"
         android:backgroundTint="#AFC5D6"
 
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="324dp">
 
         <Button
             android:id="@+id/button2"
