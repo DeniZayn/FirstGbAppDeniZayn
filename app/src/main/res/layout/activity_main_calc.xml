@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/calculation"  />
 
     <Button
-        android:id="@+id/btmAC"
+        android:id="@+id/btnAC"
         android:layout_width="200dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
@@ -46,7 +46,7 @@
         android:layout_marginLeft="5dp" />
 
     <Button
-        android:id="@+id/btmDelite"
+        android:id="@+id/btnDel"
         android:layout_width="200dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
@@ -54,11 +54,11 @@
         android:text="BACKSPACE"
         android:textStyle="bold"
         android:textSize="25sp"
-        app:layout_constraintLeft_toRightOf="@id/btmAC"
-        app:layout_constraintTop_toTopOf="@+id/btmAC"
+        app:layout_constraintLeft_toRightOf="@id/btnAC"
+        app:layout_constraintTop_toTopOf="@+id/btnAC"
         android:layout_marginLeft="5dp" />
     <Button
-        android:id="@+id/btm7"
+        android:id="@+id/btn7"
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
@@ -67,10 +67,10 @@
         android:textStyle="bold"
         android:textSize="25sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btmDelite"
+        app:layout_constraintTop_toBottomOf="@+id/btnDel"
         android:layout_marginLeft="5dp" />
     <Button
-        android:id="@+id/btm8"
+        android:id="@+id/btn8"
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
@@ -78,11 +78,11 @@
         android:text="8"
         android:textStyle="bold"
         android:textSize="25sp"
-        app:layout_constraintLeft_toRightOf="@+id/btm7"
-        app:layout_constraintTop_toBottomOf="@+id/btmDelite"
+        app:layout_constraintLeft_toRightOf="@+id/btn7"
+        app:layout_constraintTop_toBottomOf="@+id/btnDel"
         android:layout_marginLeft="5dp" />
     <Button
-        android:id="@+id/btm9"
+        android:id="@+id/btn9"
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
@@ -90,11 +90,11 @@
         android:text="9"
         android:textStyle="bold"
         android:textSize="25sp"
-        app:layout_constraintLeft_toRightOf="@+id/btm8"
-        app:layout_constraintTop_toBottomOf="@+id/btmDelite"
+        app:layout_constraintLeft_toRightOf="@+id/btn8"
+        app:layout_constraintTop_toBottomOf="@+id/btnDel"
         android:layout_marginLeft="5dp" />
     <Button
-        android:id="@+id/btmDivision"
+        android:id="@+id/btnDivision"
         android:layout_width="90dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
@@ -102,11 +102,11 @@
         android:text="/"
         android:textStyle="bold"
         android:textSize="25sp"
-        app:layout_constraintLeft_toRightOf="@+id/btm9"
-        app:layout_constraintTop_toBottomOf="@+id/btmDelite"
+        app:layout_constraintLeft_toRightOf="@+id/btn9"
+        app:layout_constraintTop_toBottomOf="@+id/btnDel"
         android:layout_marginLeft="5dp" />
     <Button
-        android:id="@+id/btm4"
+        android:id="@+id/btn4"
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
@@ -115,10 +115,10 @@
         android:textStyle="bold"
         android:textSize="25sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btm7"
+        app:layout_constraintTop_toBottomOf="@+id/btn7"
         android:layout_marginLeft="5dp" />
     <Button
-        android:id="@+id/btm5"
+        android:id="@+id/btn5"
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
@@ -126,11 +126,11 @@
         android:text="5"
         android:textStyle="bold"
         android:textSize="25sp"
-        app:layout_constraintLeft_toRightOf="@id/btm4"
-        app:layout_constraintTop_toBottomOf="@+id/btm8"
+        app:layout_constraintLeft_toRightOf="@id/btn4"
+        app:layout_constraintTop_toBottomOf="@+id/btn8"
         android:layout_marginLeft="5dp" />
     <Button
-        android:id="@+id/btm6"
+        android:id="@+id/btn6"
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
@@ -138,23 +138,23 @@
         android:text="6"
         android:textStyle="bold"
         android:textSize="25sp"
-        app:layout_constraintLeft_toRightOf="@id/btm5"
-        app:layout_constraintTop_toBottomOf="@+id/btm9"
+        app:layout_constraintLeft_toRightOf="@id/btn5"
+        app:layout_constraintTop_toBottomOf="@+id/btn9"
         android:layout_marginLeft="5dp" />
     <Button
-        android:id="@+id/multiplication"
+        android:id="@+id/btnMultiplication"
         android:layout_width="90dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
         android:textColor="#FFFFFF"
-        android:text="x"
+        android:text="*"
         android:textStyle="bold"
         android:textSize="25sp"
-        app:layout_constraintLeft_toRightOf="@+id/btm6"
-        app:layout_constraintTop_toBottomOf="@+id/btmDivision"
+        app:layout_constraintLeft_toRightOf="@+id/btn6"
+        app:layout_constraintTop_toBottomOf="@+id/btnDivision"
         android:layout_marginLeft="5dp" />
     <Button
-        android:id="@+id/btm1"
+        android:id="@+id/btn1"
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
@@ -163,10 +163,10 @@
         android:textStyle="bold"
         android:textSize="25sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btm4"
+        app:layout_constraintTop_toBottomOf="@+id/btn4"
         android:layout_marginLeft="5dp" />
     <Button
-        android:id="@+id/btm2"
+        android:id="@+id/btn2"
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
@@ -174,11 +174,11 @@
         android:text="2"
         android:textStyle="bold"
         android:textSize="25sp"
-        app:layout_constraintLeft_toRightOf="@id/btm4"
-        app:layout_constraintTop_toBottomOf="@+id/btm5"
+        app:layout_constraintLeft_toRightOf="@id/btn4"
+        app:layout_constraintTop_toBottomOf="@+id/btn5"
         android:layout_marginLeft="5dp" />
     <Button
-        android:id="@+id/btm3"
+        android:id="@+id/btn3"
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
@@ -186,11 +186,11 @@
         android:text="3"
         android:textStyle="bold"
         android:textSize="25sp"
-        app:layout_constraintLeft_toRightOf="@id/btm5"
-        app:layout_constraintTop_toBottomOf="@+id/btm6"
+        app:layout_constraintLeft_toRightOf="@id/btn5"
+        app:layout_constraintTop_toBottomOf="@+id/btn6"
         android:layout_marginLeft="5dp" />
     <Button
-        android:id="@+id/substruction"
+        android:id="@+id/btnSubtraction"
         android:layout_width="90dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
@@ -198,11 +198,11 @@
         android:text="-"
         android:textStyle="bold"
         android:textSize="25sp"
-        app:layout_constraintLeft_toRightOf="@+id/btm3"
-        app:layout_constraintTop_toBottomOf="@+id/multiplication"
+        app:layout_constraintLeft_toRightOf="@+id/btn3"
+        app:layout_constraintTop_toBottomOf="@+id/btnMultiplication"
         android:layout_marginLeft="5dp" />
     <Button
-        android:id="@+id/btmpoint"
+        android:id="@+id/btnDot"
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
@@ -211,10 +211,10 @@
         android:textStyle="bold"
         android:textSize="25sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btm1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
         android:layout_marginLeft="5dp" />
     <Button
-        android:id="@+id/btmzero"
+        android:id="@+id/btn0"
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
@@ -222,32 +222,32 @@
         android:text="0"
         android:textStyle="bold"
         android:textSize="25sp"
-        app:layout_constraintLeft_toRightOf="@id/btmpoint"
-        app:layout_constraintTop_toBottomOf="@+id/btm2"
+        app:layout_constraintLeft_toRightOf="@id/btnDot"
+        app:layout_constraintTop_toBottomOf="@+id/btn2"
         android:layout_marginLeft="5dp" />
     <Button
-        android:id="@+id/btmNegpos"
+        android:id="@+id/btnEqually"
         android:layout_width="100dp"
-        android:layout_height="70dp"
-        android:backgroundTint="#53A3E1"
-        android:textColor="#FFFFFF"
-        android:text="+/-"
-        android:textStyle="bold"
-        android:textSize="25sp"
-        app:layout_constraintLeft_toRightOf="@id/btmzero"
-        app:layout_constraintTop_toBottomOf="@+id/btm3"
-        android:layout_marginLeft="5dp" />
-    <Button
-        android:id="@+id/btmEquially"
-        android:layout_width="90dp"
         android:layout_height="70dp"
         android:backgroundTint="#53A3E1"
         android:textColor="#FFFFFF"
         android:text="="
         android:textStyle="bold"
         android:textSize="25sp"
-        app:layout_constraintLeft_toRightOf="@+id/btmNegpos"
-        app:layout_constraintTop_toBottomOf="@+id/substruction"
+        app:layout_constraintLeft_toRightOf="@id/btn0"
+        app:layout_constraintTop_toBottomOf="@+id/btn3"
+        android:layout_marginLeft="5dp" />
+    <Button
+        android:id="@+id/btnSummary"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#53A3E1"
+        android:textColor="#FFFFFF"
+        android:text="+"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/btnEqually"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubtraction"
         android:layout_marginLeft="5dp" />
 
 
