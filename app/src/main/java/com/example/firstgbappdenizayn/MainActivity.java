@@ -1,12 +1,17 @@
 package com.example.firstgbappdenizayn;
 
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+
+
+
 public class MainActivity extends AppCompatActivity {
+
     private EditText calculation, result_of_calculation;
     private String curr, res;
     private Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnAC, btnDel, btnMultiplication, btnSubtraction, btnDivision, btnDot, btnSummary, btnEqually;
@@ -17,6 +22,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+      //  Typeface typeface = Typeface.createFromAsset(getAssets(), "font/josefinsans.ttf");
+      //  TextView textView = findViewById(R.id.btnAC);
+      //  textView.setTypeface(typeface);
 
         calculation = (EditText) findViewById(R.id.calculation);
         result_of_calculation = (EditText) findViewById(R.id.result_of_calculation);
