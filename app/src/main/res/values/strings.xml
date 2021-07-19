@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">FirstGbAppDeniZayn</string>
+    <string name="test_resource">Calculator</string>
+    <string name="buttonressumm">+</string>
+    <string name="buttonresequal">=</string>
+    <string name="_buttreszero">0</string>
+    <string name="buttonresdot">.</string>
+    <string name="buttonresminus">-</string>
+    <string name="buttonresthree">3</string>
+    <string name="buttonrestwo">2</string>
+    <string name="buttonresone">1</string>
+    <string name="buttonresmult">*</string>
+    <string name="buttonressix">6</string>
+    <string name="resfour">4</string>
+    <string name="resdiv">/</string>
+    <string name="resnine">9</string>
+    <string name="reseight">8</string>
+    <string name="ressev">7</string>
+    <string name="resbacksp">BACKSPACE</string>
+    <string name="resclear">CLEAR</string>
+    <string name="darktheme">DarkTheme</string>
+
 </resources>
