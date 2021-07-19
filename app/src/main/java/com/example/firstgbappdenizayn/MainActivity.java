@@ -1,21 +1,24 @@
 package com.example.firstgbappdenizayn;
 
 
+import android.accounts.AccountAuthenticatorActivity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
-
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
-
+    private Button button;
+    private TextView textView;
     private EditText calculation, result_of_calculation;
     private String curr, res;
     private Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnAC, btnDel, btnMultiplication, btnSubtraction, btnDivision, btnDot, btnSummary, btnEqually;
     private boolean dot_inserted, operator_inserted;
+
 
 
     @Override
@@ -23,9 +26,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-      //  Typeface typeface = Typeface.createFromAsset(getAssets(), "font/josefinsans.ttf");
-      //  TextView textView = findViewById(R.id.btnAC);
-      //  textView.setTypeface(typeface);
+        button = (Button) findViewById(R.id.btnSettings);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity_lesson5();
+            }
+        });
 
         calculation = (EditText) findViewById(R.id.calculation);
         result_of_calculation = (EditText) findViewById(R.id.result_of_calculation);
@@ -53,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         btnDot = (Button) findViewById(R.id.btnDot);
         btnSummary = (Button) findViewById(R.id.btnSummary);
         btnEqually = (Button) findViewById(R.id.btnEqually);
+
 
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,11 +135,11 @@ public class MainActivity extends AppCompatActivity {
         btnDot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (curr.isEmpty()){
+                if (curr.isEmpty()) {
                     curr = "0";
                     dot_inserted = true;
                 }
-                if (dot_inserted == false){
+                if (dot_inserted == false) {
                     curr = curr + ".";
                     dot_inserted = true;
                 }
@@ -158,11 +166,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dot_inserted = false;
-                if (!curr.isEmpty()){
-                    if (curr.substring(curr.length()-1, curr.length()).equals(".")){
+                if (!curr.isEmpty()) {
+                    if (curr.substring(curr.length() - 1, curr.length()).equals(".")) {
                         backspace();
                     }
-                    if (operator_inserted == false){
+                    if (operator_inserted == false) {
                         curr = curr + " / ";
                         operator_inserted = true;
                     }
@@ -173,11 +181,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dot_inserted = false;
-                if (!curr.isEmpty()){
-                    if (curr.substring(curr.length()-1, curr.length()).equals(".")){
+                if (!curr.isEmpty()) {
+                    if (curr.substring(curr.length() - 1, curr.length()).equals(".")) {
                         backspace();
                     }
-                    if (operator_inserted == false){
+                    if (operator_inserted == false) {
                         curr = curr + " * ";
                         operator_inserted = true;
                     }
@@ -188,11 +196,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dot_inserted = false;
-                if (!curr.isEmpty()){
-                    if (curr.substring(curr.length()-1, curr.length()).equals(".")){
+                if (!curr.isEmpty()) {
+                    if (curr.substring(curr.length() - 1, curr.length()).equals(".")) {
                         backspace();
                     }
-                    if (operator_inserted == false){
+                    if (operator_inserted == false) {
                         curr = curr + " - ";
                         operator_inserted = true;
                     }
@@ -203,11 +211,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dot_inserted = false;
-                if (!curr.isEmpty()){
-                    if (curr.substring(curr.length()-1, curr.length()).equals(".")){
+                if (!curr.isEmpty()) {
+                    if (curr.substring(curr.length() - 1, curr.length()).equals(".")) {
                         backspace();
                     }
-                    if (operator_inserted == false){
+                    if (operator_inserted == false) {
                         curr = curr + " + ";
                         operator_inserted = true;
                     }
@@ -239,37 +247,43 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void openActivity_lesson5(){
+        Intent intent = new Intent(this, ActivityLesson5.class);
+        startActivity(intent);
+    }
 
 
+    public void displayOne() {
+        calculation.setText(curr);
+    }
 
+    public void displayTwo() {
+        calculation.setText(res);
+    }
 
-        }
-        public void displayOne() {
-                calculation.setText(curr);
-        }
-        public void displayTwo() {
-                calculation.setText(res);
-        }
-        public void clear() {
+    public void clear() {
         curr = "";
         res = "";
         dot_inserted = false;
         operator_inserted = false;
-        }
-        public void backspace() {
-            if (!curr.isEmpty()) {
-                if (curr.substring(curr.length() - 1, curr.length()).equals(".")) {
-                    dot_inserted = false;
-                }
-                if (curr.substring(curr.length() - 1, curr.length()).equals(" ")) {
-                    curr = curr.substring(0, curr.length() - 3);
-                    operator_inserted = false;
-                } else {
-                    curr = curr.substring(0, curr.length() - 1);
-                }
+    }
+
+    public void backspace() {
+        if (!curr.isEmpty()) {
+            if (curr.substring(curr.length() - 1, curr.length()).equals(".")) {
+                dot_inserted = false;
+            }
+            if (curr.substring(curr.length() - 1, curr.length()).equals(" ")) {
+                curr = curr.substring(0, curr.length() - 3);
+                operator_inserted = false;
+            } else {
+                curr = curr.substring(0, curr.length() - 1);
             }
         }
     }
 
+}
 
 

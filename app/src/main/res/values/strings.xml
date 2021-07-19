@@ -18,4 +18,6 @@
     <string name="ressev">7</string>
     <string name="resbacksp">BACKSPACE</string>
     <string name="resclear">CLEAR</string>
+    <string name="darktheme">DarkTheme</string>
+
 </resources>

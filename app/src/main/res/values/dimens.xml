@@ -3,5 +3,16 @@
     <dimen name="margin">8dp</dimen>
     <dimen name="textSize">42sp</dimen>
     <dimen name="textColor"> #964b00</dimen>
+    <dimen name="layoutWidth">98dp"</dimen>
+    <dimen name="layoutHeight">70dp</dimen>
+    <dimen name="layoutMarginLeft">5dp</dimen>
+    <dimen name="backgroundTint">#53A3E1</dimen>
+    <dimen name="textColor2">#FFFFFF</dimen>
+    <dimen name="textSize2">25sp</dimen>
+    <dimen name="textStyle">bold</dimen>
 
+    
 </resources>
+
+ 
+ 
